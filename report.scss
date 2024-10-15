@@ -1,8 +1,8 @@
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
-
+@import url("https://edwardtufte.github.io/et-book/et-book.css");
 @import "stylesheets/extensions.scss";
 
-$bgColor: #2196f3;
+$bgColor: #FFC008;
 $bgTextColor: #fff;
 $URL: 'https://docs.pfb.brussels';
 
@@ -44,6 +44,7 @@ $URL: 'https://docs.pfb.brussels';
 
 
 @page {
+  background: #fffff8;
   @top-left {
     background: $bgColor;
     content: counter(page);
@@ -199,8 +200,8 @@ html {
       }
     }
   }
-  color: #393939;
-  font-family: Fira Sans, helvetica, arial;
+  color: #111111;
+  font-family: "et-book", helvetica, arial;
   font-size: 11pt;
   font-weight: 300;
   line-height: 1.5;
@@ -211,15 +212,25 @@ html {
   max-width: 100%;
   margin-top: 5px;
 }
+figcaption {
+  font-style: italic;
+}
+
 
 html body {
   h1 {
     color: $bgColor;
     string-set: heading content();
+    font-size: 3.2em;
+    line-height: 1;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+  
   }
   h2, h3, h4 {
-    color: black;
+    font-style: italic;
     font-weight: 400;
+    
   }
   h2 {
     font-size: 20pt;

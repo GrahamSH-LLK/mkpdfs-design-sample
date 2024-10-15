@@ -108,13 +108,13 @@ article {
       }
 
       // Define synonyms for base class
-      @if length($names) > 1 {
-        @for $n from 2 through length($names) {
-          &.#{nth($names, $n)} {
-            @extend .admonition%#{nth($names, 1)};
-          }
-        }
-      }
+      // @if length($names) > 1 {
+      //  @for $n from 2 through length($names) {
+      //    &.#{nth($names, $n)} {
+      //      @extend .admonition%#{nth($names, 1)};
+      //    }
+      //  }
+     // }
     }
   }
 }
